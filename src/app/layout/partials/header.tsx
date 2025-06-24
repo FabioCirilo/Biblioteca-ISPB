@@ -27,31 +27,44 @@ export default function Header() {
 
   return (
     <header className={headerClass}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-7xl flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="  py-4">
           <h1 className="text-xl font-bold text-gray-900">Biblioteca ISPB</h1>
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <Link href="/" className="text-gray-600 hover:text-gray-900">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <a href="/about" className="text-gray-600 hover:text-gray-900">
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  Contato
-                </a>
-              </li>
-            </ul>
-          </nav>
+        </Link>
+        <nav>
+          <ul className="flex space-x-4">
+            <li>
+              <Link href="/" className="text-gray-600 hover:text-gray-900">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/books" className="text-gray-600 hover:text-gray-900">
+                Livros
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="text-gray-600 hover:text-gray-900">
+                Sobre
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                Contato
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="flex items-center space-x-4">
+          <Link href="/login" className="text-gray-600 hover:text-gray-900">
+            Login
+          </Link>
+          <Link href="/register" className="text-gray-600 hover:text-gray-900">
+            Registrar
+          </Link>
         </div>
       </div>
     </header>
