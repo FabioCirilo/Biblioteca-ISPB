@@ -44,7 +44,10 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900">
+              <Link
+                href="/aboutus"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 Sobre
               </Link>
             </li>
