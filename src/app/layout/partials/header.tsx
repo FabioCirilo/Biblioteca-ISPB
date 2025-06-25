@@ -59,10 +59,13 @@ export default function Header() {
           </ul>
         </nav>
         <div className="flex items-center space-x-4">
-          <Link href="/login" className="text-gray-600 hover:text-gray-900">
+          <Link href="/aunthetic" className="text-gray-600 hover:text-gray-900">
             Login
           </Link>
-          <Link href="/register" className="text-gray-600 hover:text-gray-900">
+          <Link
+            href="/aunthetic/register"
+            className="text-gray-600 hover:text-gray-900"
+          >
             Registrar
           </Link>
         </div>
